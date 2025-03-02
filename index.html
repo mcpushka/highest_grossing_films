@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest-Grossing Films</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>Highest-Grossing Films</h1> <!-- Main heading -->
+    
+    <!-- Filter section -->
+    <div id="filters">
+        <label for="year-filter">Filter by Year:</label> <!-- Label for the input field -->
+        <input type="number" id="year-filter" placeholder="Enter year"> <!-- Input field for filtering by year -->
+        <button onclick="filterFilms()">Filter</button> <!-- Button to apply the filter -->
+        <button onclick="resetFilters()">Reset</button> <!-- Button to reset the filter -->
+    </div>
+
+    <!-- Table to display film data -->
+    <table id="films-table">
+        <thead>
+            <tr>
+                <th>Title</th> <!-- Table header for film title -->
+                <th>Release Year</th> <!-- Table header for release year -->
+                <th>Director</th> <!-- Table header for director -->
+                <th>Box Office Revenue</th> <!-- Table header for box office revenue -->
+                <th>Country</th> <!-- Table header for country -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
